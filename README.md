@@ -11,3 +11,5 @@ Eventually this will not only label out all my tools but will also contain forks
 - rpi-imager
 - balenaEtcher
 - synaptic
+- INXI -driver install
+- 
