@@ -10,3 +10,4 @@ Eventually this will not only label out all my tools but will also contain forks
 - Netgear a7000 Wireless usb adapter driver for multiple architectures<br> 
 - rpi-imager
 - balenaEtcher
+- synaptic
