@@ -12,4 +12,4 @@ Eventually this will not only label out all my tools but will also contain forks
 - balenaEtcher
 - synaptic
 - INXI -driver install
-- 
+- DBeaver -Database Management
