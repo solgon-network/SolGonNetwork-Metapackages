@@ -1,7 +1,5 @@
 #!/usr/bin/bash
 
-sudo apt update && sudo apt full-upgrade 
-sudo apt install git python3 nodejs guake
 sudo cp /usr/share/applications/guake.desktop /etc/xdg/autostart/
 # Git Setup
 clear
