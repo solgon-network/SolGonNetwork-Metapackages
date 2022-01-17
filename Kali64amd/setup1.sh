@@ -6,22 +6,23 @@ clear
 echo "Setting Universal Git Props"
 sleep 1
 # Git Username
-read -p "Enter Username: " gitusrname
-git config --global user.name $gitusrname
+read -n1 -p "Enter New Git Username?[y/n] " gitusrnamego
+case $gitusrnamego in
+  y|Y) read -p "Enter Username: " gitusrname ; git config --global user.name $gitusrname ;
+  n|N) break;;
+esac
 echo "Username Set As $gitusrname"
 sleep 1
 # Git Email
-read -p "Enter Email Address: " gitusremail
-git config --global user.email $gitusremail
+read -n1 -p "Enter New Git Email Address?[y/n] " gitusremailgo
+case $gitusremailgo in
+  y|Y) read -p "Enter Email: " gitusremail ; git config --global user.email $gitusremail ;
+  n|N) break ;;
+esac
 echo "Email Set As $gitusremail"
+clear
 echo " Git Username and Email Set!"
 sleep 1
-read -n1 -p " Reboot [y,n]" doit 
-case $doit in  
-  y|Y) sudo reboot;; 
-  n|N) break ;; 
-  *) echo dont know ;; 
-esac
 # set up snap
 echo "Setting Up Snap Store"
 sleep 2
