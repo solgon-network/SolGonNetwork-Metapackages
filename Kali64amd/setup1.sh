@@ -32,11 +32,17 @@ systemctl enable --now snapd apparmor
 # set up Joplin
 read -n1 -p "Install Joplin?" jopgo
 case $jopgo in
-  y|Y) sudo snap install joplin-desktop;;
+  y|Y) sudo snap install joplin-desktop ;;
   n|N) break ;;
   *) echo BoneDigger ;;
 esac
-# setting up ProtonVPN
+# set up Visual Studio Code
+read -n1 -p "Install Code?" codego
+case $codego in
+  y|Y) sudo snap install code --classic ;;
+  n|N) break ;;
+esac
+# set up ProtonVPN
 echo "Setting up VPN"
 sleep 2
 wget https://protonvpn.com/download/protonvpn-stable-release_1.0.1-1_all.deb
