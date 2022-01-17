@@ -9,7 +9,7 @@ sleep 1
 read -n1 -p "Enter New Git Username?[y/n] " gitusrnamego
 case $gitusrnamego in
   y|Y) read -p "Enter Username: " gitusrname ; git config --global user.name $gitusrname ;
-  n|N) break;;
+  n|N) break ;;
 esac
 echo "Username Set As $gitusrname"
 sleep 1
